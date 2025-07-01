@@ -13,7 +13,7 @@ import tn.esb.rh.service.IStudentService;
 @RequestMapping("/student")
 @CrossOrigin(allowedHeaders="*",origins="*")
 public class StudentController {
-
+//modif
 
 	private IStudentService studentService;
 
