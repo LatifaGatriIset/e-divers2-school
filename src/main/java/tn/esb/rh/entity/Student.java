@@ -25,4 +25,5 @@ public class Student {
     private Double percentage;
 
   private Double toto;
+
 }
