@@ -32,6 +32,7 @@ services:
         }
     stdin_open: true
     tty: true
+
   app-school-front:
     image : mouradhassini/student-front-image:1.0.0
     restart: on-failure
