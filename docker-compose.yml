@@ -17,7 +17,7 @@ services:
   app-school:
     depends_on:
       - mysqldb
-    image: gatrilatifaiset/school-image:1.0.0
+    image: gatrilatifaiset/shool-image:1.0.0
     #build : ./
     restart: on-failure
     ports:
@@ -31,14 +31,14 @@ services:
       }'
     stdin_open: true
     tty: true
-
-  app-school-frontend:
-    image: mouradhassini/student-front-image:1.0.0
+  app-school-front:
+    image : mouradhassini/student-front-image:1.0.0
     restart: on-failure
     ports:
-      -"8585:85"
+      - "8585:85"
     depends_on:
       - app-school
+
 
 volumes:
   db :
